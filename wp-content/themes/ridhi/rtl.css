@@ -1,0 +1,342 @@
+/*
+Theme Name: Ridhi
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.site-header .header-t .contact-info-lists .email-link svg,
+.site-header .header-t .contact-info-lists .tel-link svg{
+    margin-right: 0;
+    margin-left: 10px;
+}
+body .site-header .site-branding.logo-with-site-identity .text-logo .site-title-description{
+    padding-left: 0;
+    padding-right: 15px;
+}
+.main-navigation ul ul li.menu-item-has-children:after{
+    right: auto;
+    left: 16px;
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+.main-navigation ul li{
+    margin-right: 40px;
+    margin-left: 0;
+}
+.main-navigation ul li:first-child{
+    margin-right: 0;
+}
+.main-navigation ul ul ul{
+    right: 100%;
+    left: auto;
+}
+.main-navigation ul.menu > li:last-child ul ul,
+.main-navigation ul.menu > li:nth-last-child(2) ul ul{
+    left: 100%;
+    right: auto;
+}
+.site-header .header-b .search-icon{
+    margin-left: 0;
+    margin-right: 40px;
+}
+.site-header .header-b .right-panel .btn-book{
+    margin-left: 0;
+    margin-right: 40px;
+}
+.site-header .header-b .search-icon .search-form{
+    left: 0;
+    right: auto;
+}
+.site-header .header-b .search-icon .btn-form-close{
+    right: auto;
+    left: 15px;
+}
+.three-cols .holder .widget .icon-holder{
+    margin-right: auto;
+    margin-left: 20px;
+}
+.our-features .holder .widget .text-holder .btn-readmore,
+.services .holder .widget_rrtc_icon_text_widget .text-holder .btn-readmore{
+    padding-right: 0;
+}
+.our-features .holder .widget .text-holder .btn-readmore svg,
+.services .holder .widget_rrtc_icon_text_widget .text-holder .btn-readmore svg{
+    right: 100%;
+    -webkit-transform: translate(-10px, -50%) rotate(180deg);
+       -moz-transform: translate(-10px, -50%) rotate(180deg);
+        -ms-transform: translate(-10px, -50%) rotate(180deg);
+         -o-transform: translate(-10px, -50%) rotate(180deg);
+            transform: translate(-10px, -50%) rotate(180deg);
+}
+.our-features .holder .widget .text-holder .btn-readmore:hover svg,
+.services .holder .widget_rrtc_icon_text_widget .text-holder .btn-readmore:hover svg{
+    -webkit-transform: translate(-20px, -50%) rotate(180deg);
+       -moz-transform: translate(-20px, -50%) rotate(180deg);
+        -ms-transform: translate(-20px, -50%) rotate(180deg);
+         -o-transform: translate(-20px, -50%) rotate(180deg);
+            transform: translate(-20px, -50%) rotate(180deg);
+}
+.our-team .holder .widget_rrtc_description_widget .social-profile li{
+    margin-right: 0;
+    margin-left: 1.333em;
+}
+.step-section .holder .step-item svg{
+    right: auto;
+    left: -35px;
+    -webkit-transform: translate(0, -50%) scaleX(-1);
+       -moz-transform: translate(0, -50%) scaleX(-1);
+        -ms-transform: translate(0, -50%) scaleX(-1);
+         -o-transform: translate(0, -50%) scaleX(-1);
+            transform: translate(0, -50%) scaleX(-1);
+}
+.blog-section .post .text-holder .category, .blog-section .search-post .text-holder .category{
+    border-left-width: 0;
+    border-right: 3px solid;
+}
+.testimonial-section .testimonial-slider .owl-nav .owl-prev{
+    left: auto;
+    right: 0;
+}
+.testimonial-section .testimonial-slider .owl-nav .owl-next{
+    left: 0;
+    right: auto;
+}
+.testimonial-section .testimonial-slider .owl-nav .owl-next:after,
+.testimonial-section .testimonial-slider .owl-nav .owl-prev:after{
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+       -moz-transform: translate(-50%, -50%) rotate(180deg);
+        -ms-transform: translate(-50%, -50%) rotate(180deg);
+         -o-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+}
+.newsletter-section .blossomthemes-email-newsletter-wrapper form input[type=text]{
+    margin-right: 0;
+    margin-left: 30px;
+}
+#secondary .widget ul li a{
+    border-left: none;
+    border-right: 3px solid;
+    padding-left: 0;
+    padding-right: 16px;
+}
+#secondary .widget.widget_recent_comments ul li .comment-author-link{
+    border-left: none;
+    border-right: 3px solid;
+    padding-left: 0;
+    padding-right: 16px;
+}
+.banner .text-holder{
+    text-align: center;
+}
+.single .banner .text-holder .entry-meta .byline{
+    margin-left: 21px;
+    margin-right: 0;
+}
+.single #primary .post .social-share{
+    margin-right: auto;
+    margin-left: 68px;
+    float: right;
+}
+.comments-area ol li .comment-body .comment-meta{
+    margin-left: 20px;
+    margin-right: 0;
+}
+blockquote{
+    padding-left: 0;
+    padding-right: 88px;
+}
+blockquote:before{
+    left: auto;
+    right: 0;
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+.cta-section .widget .right .text-holder .button-wrap{
+    right: auto;
+    left: 0;
+}
+.post-navigation .nav-links{
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+}
+.post-navigation .nav-links .nav-previous{
+    width: 50%;
+    -webkit-order: 1;
+        -ms-order: 1;
+            order: 1;
+        text-align: left;
+}
+.post-navigation .nav-links .nav-previous svg{
+    float: left;
+    margin-top: 12px;
+}
+.post-navigation .nav-links .nav-next{
+    width: 50%;
+}
+.post-navigation .nav-links .nav-next svg{
+    display: inline-block;
+    float: right;
+    margin-top: 12px;
+}
+.pagination .nav-links .page-numbers.next:after{
+    -webkit-transform: translate(-50%, -50%) scaleX(-1);
+       -moz-transform: translate(-50%, -50%) scaleX(-1);
+        -ms-transform: translate(-50%, -50%) scaleX(-1);
+         -o-transform: translate(-50%, -50%) scaleX(-1);
+            transform: translate(-50%, -50%) scaleX(-1);
+}
+.widget_search form.search-form label,
+.widget_search form.search-form input[type=submit]{
+    float: right;
+}
+#secondary .widget_calendar table caption{
+    text-align: right;
+}
+.page-template-testimonial .testimonial-wrapper .holder .col .testimonial-meta .img-holder{
+    margin-right: 0;
+    margin-left: 24px;
+}
+table th, table td{
+    text-align: right;
+}
+#load-posts a svg{
+    margin-left: 5px;
+    margin-right: 0;
+}
+.page-template-contact .contact-holder .contact-info .phone .icon-holder,
+.page-template-contact .contact-holder .contact-info .email .icon-holder,
+.page-template-contact .contact-holder .contact-info .address .icon-holder{
+    margin-right: 0;
+    margin-left: 26px;
+}
+.site-footer .footer-t .grid .col{
+    padding-left: 30px;
+    padding-right: 0;
+}
+.site-footer .footer-t .grid .col table caption{
+    text-align: right;
+}
+.mobile-header .mobile-navigation ul li .arrow-down{
+    right: auto;
+    left: 0;
+}
+.mobile-header .contact-info-lists .tel-link svg,
+.mobile-header .contact-info-lists .email-link svg{
+    margin-left: 10px;
+    margin-right: 0;
+}
+.mobile-header .social-networks{
+    margin-left: 0;
+    margin-right: 32px;
+}
+.mobile-header .search-icon .search-form{
+    right: auto;
+    left: 0;
+}
+.mobile-header .search-icon .btn-form-close{
+    left: 15px;
+    right: auto;
+}
+.site-footer .footer-b .social-networks li{
+    margin-left: 0;
+    margin-right: 24px;
+    float: right;
+}
+.site-footer .footer-b .social-networks li:first-child{
+    margin-right: 0;
+}
+.author-section .img-holder{
+    margin-right: 0;
+    margin-left: 32px;
+}
+
+.rtc-team-holder-modal .rtc-team-inner-holder-modal .image-holder{
+    margin-right: 0 !important;
+    margin-left: 20px !important;
+}
+.cta-section.layout-two .widget .raratheme-cta-container.cta-layout-two .button-wrap{
+    text-align: left;
+}
+body .site-header .header-b .search-icon .search-form{
+    left: 0;
+    right: auto;
+}
+body .site-header .header-b .search-icon .btn-form-close{
+    left: 15px;
+    right: auto;
+}
+.woocommerce-cart #primary .page .entry-content table.shop_table td.actions .coupon{
+    text-align: right;
+}
+body .site-header.header-three .header-b .container .site-branding.logo-with-site-identity .text-logo .site-title-description{
+    text-align: right;
+}
+body .site-header.header-three .main-navigation ul ul{
+    left: auto;
+    right: -20px;
+}
+body .site-header.header-three .header-b .container .left-panel .main-navigation ul.menu ul ul,
+body .site-header.header-three .header-b .container .left-panel .main-navigation ul.menu > li:last-child ul ul,
+body .site-header.header-three .header-b .container .left-panel .main-navigation ul.menu > li:nth-last-child(2) ul ul{
+    right: 100%;
+    left: auto;
+}
+body .site-header.header-three .main-navigation ul.menu > li ul{
+    right: auto;
+    left: -20px;
+}
+body .site-header.header-three .main-navigation ul.menu > li ul{
+    right: -20px;
+    left: auto;
+}
+body .site-header.header-three .main-navigation ul.menu > li ul ul,
+body .site-header.header-three .main-navigation ul.menu > li:last-child ul ul,
+body .site-header.header-three .main-navigation ul.menu > li:nth-last-child(2) ul ul{
+    left: 100%;
+    right: auto;
+}
+@media only screen and (max-width: 1024px){
+    .three-cols .holder .widget .icon-holder{
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .step-section .holder .step-item svg{
+        left: 50%;
+        margin-left: -30px;
+        right: auto;
+        -webkit-transform: rotate(90deg);
+           -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+             -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    .newsletter-section .blossomthemes-email-newsletter-wrapper form input[type=text]{
+        margin-left: 0;
+    }
+    .contact-section .contact-info .icon-holder{
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .social-media-section .social-networks{
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
+}
